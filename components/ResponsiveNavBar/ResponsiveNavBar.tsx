@@ -14,7 +14,7 @@ const ResponsiveNavBar = () => {
 const navLinks = [
   <Link href={'#about'} key="1">
     <a className="no-underline text-gray-800 text-lg hover:text-gray-600">
-      About me
+      About
     </a>
   </Link>,
   <Link href={'#projects'} key="1">
@@ -22,7 +22,6 @@ const navLinks = [
       Projects
     </a>
   </Link>,
-
   <Link href="#contact" key="3">
     <a className="no-underline text-purple-600 text-lg  border-2 border-purple-600 rounded-full p-2 pr-4 pl-4 hover:text-white hover:bg-purple-600">
       Say hello
