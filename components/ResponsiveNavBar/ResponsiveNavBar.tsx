@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ResponsiveNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const navLinks = [
     </a>
   </Link>,
   <Link href="#contact" key="3">
-    <a className="no-underline text-purple-600 text-lg  border-2 border-purple-600 rounded-full p-2 pr-4 pl-4 hover:text-white hover:bg-purple-600">
+    <a className="no-underline text-purple-600 text-lg  border-2 border-purple-600 rounded-full p-2 pr-4 pl-4 hover:text-white hover:bg-purple-600 focus:text-white focus:bg-purple-600">
       Say hello
     </a>
   </Link>,
@@ -33,7 +34,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: any) => (
   <div className="flex items-center justify-between p-4">
     <Link href="/">
       <a className="text-xl font-bold no-underline text-gray-800 hover:text-gray-600">
-        <img src="/logo.svg" alt="logo" />
+        <Image src="/logo.svg" alt="logo" width={48} height={48} />
       </a>
     </Link>
     <nav className="hidden md:block space-x-10">{navLinks}</nav>
