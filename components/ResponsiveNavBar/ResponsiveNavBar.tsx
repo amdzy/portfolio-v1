@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import { Link as ScrollLink } from 'react-scroll';
 
 const ResponsiveNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,30 +17,36 @@ const ResponsiveNavBar = () => {
   );
 
   const navLinks = [
-    <Link href={'#about'} key="1">
-      <a
-        className="no-underline text-gray-800 text-lg hover:text-main"
-        onClick={() => setMenuOpen(false)}
-      >
-        About
-      </a>
-    </Link>,
-    <Link href={'#projects'} key="2">
-      <a
-        className="no-underline text-gray-800 text-lg hover:text-main"
-        onClick={() => setMenuOpen(false)}
-      >
-        Projects
-      </a>
-    </Link>,
-    <Link href={'#contact'} key="3">
-      <a
-        className="no-underline text-gray-800 text-lg hover:text-main"
-        onClick={() => setMenuOpen(false)}
-      >
-        Contacts
-      </a>
-    </Link>,
+    <ScrollLink
+      to="about"
+      key="1"
+      smooth={true}
+      duration={500}
+      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      onClick={() => setMenuOpen(false)}
+    >
+      About
+    </ScrollLink>,
+    <ScrollLink
+      to="projects"
+      key="2"
+      smooth={true}
+      duration={500}
+      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      onClick={() => setMenuOpen(false)}
+    >
+      Projects
+    </ScrollLink>,
+    <ScrollLink
+      to="contact"
+      key="3"
+      smooth={true}
+      duration={500}
+      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      onClick={() => setMenuOpen(false)}
+    >
+      Contacts
+    </ScrollLink>,
   ];
 
   const sticky = 'sticky top-0 shadow-md';
