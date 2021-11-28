@@ -1,6 +1,6 @@
 import Code from '../svg/Code';
 import Desktop from '../svg/Desktop';
-import Terminal from '../svg/Terminal';
+import Backend from '../svg/Backend';
 
 const About = () => {
   return (
@@ -10,12 +10,9 @@ const About = () => {
           Hi, I’m ..... . Nice to meet you.
         </h2>
         <p className="text-center max-w-3xl mt-6 mx-auto tracking-wider leading-relaxed text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          expedita soluta placeat dignissimos suscipit excepturi necessitatibus
-          vel voluptas explicabo, cum nostrum consectetur saepe assumenda
-          temporibus architecto veritatis sed rem commodi! Est libero
-          perspiciatis voluptatum quasi facilis cum at sit, temporibus, modi quo
-          quisquam fugiat laudantium veritatis nam soluta.
+          I am a software engineer who started his journey by studying computer
+          engineering in university, ended up falling in love with coding and
+          web development.
         </p>
       </section>
       <section className="-mt-36 mb-20 bg-white w-11/12 lg:w-10/12 mx-auto z-10 rounded-xl grid grid-cols-1 md:grid-cols-3 shadow-md">
@@ -63,7 +60,7 @@ const skills = [
     ],
   },
   {
-    img: <Terminal className="h-12 w-12 text-main stroke-current" />,
+    img: <Backend className="h-12 w-12 text-main stroke-current" />,
     title: 'Back-end',
     items: ['Node', 'Express', 'NestJS', 'MongoDB', 'PostgreSQL'],
   },

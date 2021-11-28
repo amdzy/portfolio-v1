@@ -5,7 +5,7 @@ import Image from 'next/image';
 const ResponsiveNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20">
+    <header className="p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 sticky top-0  bg-white pb-0 pt-0">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
     </header>
@@ -22,8 +22,8 @@ const navLinks = [
     </a>
   </Link>,
   <Link href="#contact" key="3">
-    <a className="no-underline text-main text-lg  border-2 border-main rounded-full p-2 pr-4 pl-4 hover:text-white hover:bg-main focus:text-white focus:bg-main transition-all duration-300">
-      Say hello
+    <a className="no-underline text-gray-800 text-lg hover:text-main">
+      Contacts
     </a>
   </Link>,
 ];

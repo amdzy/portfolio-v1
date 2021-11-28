@@ -11,7 +11,7 @@ const Hero = () => {
       <img
         src="/avatar.svg"
         alt=""
-        className="w-[150px] h-[160px] mt-16 mx-auto md:w-[200px] md:h-[210px]"
+        className="w-[150px] h-[160px] mt-16 mx-auto md:w-[200px] md:h-[210px] text-main stroke-current fill-current"
       />
       <img src="/hero.svg" alt="" className="mx-auto mt-16" />
     </section>
