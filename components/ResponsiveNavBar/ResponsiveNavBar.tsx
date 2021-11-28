@@ -18,7 +18,7 @@ const navLinks = [
       About
     </a>
   </Link>,
-  <Link href={'#projects'} key="1">
+  <Link href={'#projects'} key="2">
     <a className="no-underline text-gray-800 text-lg hover:text-gray-600">
       Projects
     </a>

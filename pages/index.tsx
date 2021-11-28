@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import About from '../components/About/About';
 import Hero from '../components/Hero/Hero';
+import Projects from '../components/Projects/Projects';
 import ResponsiveNavBar from '../components/ResponsiveNavBar/ResponsiveNavBar';
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <ResponsiveNavBar />
       <Hero />
       <About />
+      <Projects />
     </div>
   );
 };
