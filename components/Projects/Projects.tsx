@@ -11,10 +11,7 @@ const Projects = () => {
         </h2>
         <FeaturedProjects />
       </section>
-      <section
-        id="projects"
-        className="p-4 md:p-8 w-11/12 max-w-4xl mx-auto mt-12"
-      >
+      <section className="p-4 md:p-8 w-11/12 max-w-4xl mx-auto mt-12">
         <h2 className="text-center text-3xl font-semibold mb-12">
           Other Noteworthy Projects
         </h2>
