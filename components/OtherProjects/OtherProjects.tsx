@@ -9,7 +9,7 @@ const OtherProjects = () => {
     <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {otherProjects.map((project) => {
         return (
-          <li className="shadow-md p-4" key={project.name}>
+          <li className="shadow-md p-4 bg-white" key={project.name}>
             <div className="flex justify-between items-center mb-4">
               <Link href={project.githubLink}>
                 <a
@@ -20,14 +20,17 @@ const OtherProjects = () => {
                 </a>
               </Link>
               <Link href={project.liveLink}>
-                <a aria-label="project live page" className="hover:text-main">
+                <a
+                  aria-label="project live page"
+                  className="hover:text-main dark:text-white"
+                >
                   <External />
                 </a>
               </Link>
             </div>
             <h2 className=" text-2xl font-bold mb-4">{project.name}</h2>
             <p className="mb-4 leading-relaxed tracking wide">{project.desc}</p>
-            <ul className="flex mb-4 gap-5 text-gray-800">
+            <ul className="flex mb-4 text-gray-800 space-x-5">
               {project.tools.map((tool) => (
                 <i key={tool}>{tool}</i>
               ))}

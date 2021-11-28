@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
               }`}
             >
               <Link href={project.liveLink}>
-                <a>
+                <a aria-label="Project live page">
                   <Image
                     src={project.image}
                     alt=""
