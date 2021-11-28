@@ -4,7 +4,7 @@ import External from '../svg/External';
 import Code from '../svg/Code';
 import featuredProjects from '../../data/featured-projects';
 
-const FeaturedProjectCard = () => {
+const FeaturedProjects = () => {
   const evenDesc = 'col-start-1 col-span-full md:col-start-5 lg:col-start-6';
   const evenImg = 'col-start-1 col-span-full md:col-end-8';
   const oddDesc = 'col-start-1 col-span-full md:col-end-8 text-left';
@@ -22,15 +22,15 @@ const FeaturedProjectCard = () => {
                 i % 2 == 0 ? evenDesc : oddDesc
               }`}
             >
-              <p className="text-purple-600 text-sm md:text-lg mb-2">
+              <p className="text-main text-sm md:text-lg mb-2">
                 Featured Project
               </p>
-              <h2 className="text-white text-2xl font-bold mb-6 hover:text-purple-800 w-full md:text-black md:text-3xl">
+              <h2 className="text-white text-2xl font-bold mb-6 hover:text-main w-full md:text-black md:text-3xl">
                 <Link href="/" passHref>
                   <a className="w-full block">{project.name}</a>
                 </Link>
               </h2>
-              <p className="text-gray-100 mb-6 leading-relaxed md:bg-purple-600 md:p-4 md:rounded-md text-left">
+              <p className="text-gray-100 mb-6 leading-relaxed md:bg-main md:p-4 md:rounded-md text-left">
                 {project.desc}
               </p>
               <ul
@@ -49,14 +49,14 @@ const FeaturedProjectCard = () => {
               >
                 <a
                   href={project.githubLink}
-                  className="hover:text-purple-600 focus:text-purple-600"
+                  className="hover:text-main focus:text-main"
                   aria-label="Project github page"
                 >
                   <Code />
                 </a>
                 <a
                   href={project.liveLink}
-                  className="hover:text-purple-600 focus:text-purple-600"
+                  className="hover:text-main focus:text-main"
                   aria-label="Project live page"
                 >
                   <External />
@@ -76,7 +76,7 @@ const FeaturedProjectCard = () => {
                     layout="fill"
                     className="opacity-50 md:opacity-100"
                   />
-                  <div className="absolute bg-gray-900/30 w-full h-full z-10 hover:bg-transparent transition-all duration-300"></div>
+                  <div className="absolute bg-gray-900/80 md:bg-gray-900/30 w-full h-full z-10 hover:bg-transparent transition-all duration-300"></div>
                 </a>
               </Link>
             </div>
@@ -87,4 +87,4 @@ const FeaturedProjectCard = () => {
   );
 };
 
-export default FeaturedProjectCard;
+export default FeaturedProjects;

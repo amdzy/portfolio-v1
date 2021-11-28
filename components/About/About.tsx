@@ -5,7 +5,7 @@ import Terminal from '../svg/Terminal';
 const About = () => {
   return (
     <>
-      <section className="bg-purple-600 text-white pt-28 pb-56" id="about">
+      <section className="bg-main text-white pt-28 pb-56" id="about">
         <h2 className="text-center text-3xl font-bold">
           Hi, I’m ..... . Nice to meet you.
         </h2>
@@ -44,12 +44,12 @@ export default About;
 
 const skills = [
   {
-    img: <Code className="h-12 w-12 text-purple-600 stroke-current" />,
+    img: <Code className="h-12 w-12 text-main stroke-current" />,
     title: 'Languages',
     items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
   },
   {
-    img: <Desktop className="h-12 w-12 text-purple-600 stroke-current" />,
+    img: <Desktop className="h-12 w-12 text-main stroke-current" />,
     title: 'Front-end',
     items: [
       'React',
@@ -63,7 +63,7 @@ const skills = [
     ],
   },
   {
-    img: <Terminal className="h-12 w-12 text-purple-600 stroke-current" />,
+    img: <Terminal className="h-12 w-12 text-main stroke-current" />,
     title: 'Back-end',
     items: ['Node', 'Express', 'NestJS', 'MongoDB', 'PostgreSQL'],
   },
