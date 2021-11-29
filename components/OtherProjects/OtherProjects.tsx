@@ -30,11 +30,11 @@ const OtherProjects = () => {
             </div>
             <h2 className=" text-2xl font-bold mb-4">{project.name}</h2>
             <p className="mb-4 leading-relaxed tracking wide">{project.desc}</p>
-            <ul className="flex mb-4 text-gray-800 space-x-5">
+            <div className="flex mb-4 text-gray-800 space-x-5">
               {project.tools.map((tool) => (
-                <i key={tool}>{tool}</i>
+                <p key={tool}>{tool}</p>
               ))}
-            </ul>
+            </div>
           </li>
         );
       })}

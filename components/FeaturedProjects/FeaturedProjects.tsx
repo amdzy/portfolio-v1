@@ -33,15 +33,15 @@ const FeaturedProjects = () => {
               <p className="text-gray-100 mb-6 leading-relaxed md:bg-main md:p-4 md:rounded-md text-left">
                 {project.desc}
               </p>
-              <ul
-                className={`flex flex-wrap space-x-6 mb-6 text-gray-100 md:text-black ${
-                  i % 2 == 0 ? 'md:justify-end' : 'md:justify-start'
+              <div
+                className={`flex flex-wrap space-x-6 mb-6 text-gray-100 md:text-black md:w-9/12 ${
+                  i % 2 == 0 ? 'md:justify-end md:ml-auto' : 'md:justify-start'
                 }`}
               >
                 {project.tools.map((x, i) => (
-                  <i key={x + i}>{x}</i>
+                  <p key={x + i}>{x}</p>
                 ))}
-              </ul>
+              </div>
               <div
                 className={`space-x-8 text-gray-100 md:text-black flex ${
                   i % 2 == 0 ? 'md:justify-end' : 'md:justify-start'
@@ -64,7 +64,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
             <div
-              className={`overflow-hidden relative row-start-1 row-span-full md:h-4/6 md:self-center md:rounded-md md:shadow-lg lg:h-5/6 2xl:h-full ${
+              className={`overflow-hidden relative row-start-1 row-span-full md:h-4/6 md:self-center md:rounded-md md:shadow-lg lg:h-5/6 ${
                 i % 2 == 0 ? evenImg : oddImg
               }`}
             >
