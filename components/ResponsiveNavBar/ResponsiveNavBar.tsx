@@ -16,13 +16,16 @@ const ResponsiveNavBar = () => {
     [hideOnScroll]
   );
 
+  const navLinkStyle =
+    'no-underline text-gray-800 dark:text-lightestSlate text-lg hover:text-main dark:hover:text-main cursor-pointer';
+
   const navLinks = [
     <ScrollLink
       to="about"
       key="1"
       smooth={true}
       duration={500}
-      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      className={navLinkStyle}
       onClick={() => setMenuOpen(false)}
     >
       About
@@ -32,7 +35,7 @@ const ResponsiveNavBar = () => {
       key="2"
       smooth={true}
       duration={500}
-      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      className={navLinkStyle}
       onClick={() => setMenuOpen(false)}
     >
       Projects
@@ -42,7 +45,7 @@ const ResponsiveNavBar = () => {
       key="3"
       smooth={true}
       duration={500}
-      className="no-underline text-gray-800 text-lg hover:text-main cursor-pointer"
+      className={navLinkStyle}
       onClick={() => setMenuOpen(false)}
     >
       Contacts
@@ -52,7 +55,7 @@ const ResponsiveNavBar = () => {
   const sticky = 'sticky top-0 shadow-md';
   return (
     <header
-      className={`p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 z-30  bg-white pb-0 pt-0 transition-all duration-300 ${
+      className={`p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 z-30 bg-white pb-0 pt-0 transition-all duration-300 dark:bg-lightNavy ${
         (hideOnScroll || menuOpen) && sticky
       } `}
     >
@@ -67,9 +70,9 @@ const ResponsiveNavBar = () => {
 };
 
 const Navbar = ({ menuOpen, setMenuOpen, navLinks }: any) => (
-  <div className="flex items-center justify-between p-4">
+  <div className="flex items-center justify-between p-4 pt-2 pb-2">
     <Link href="/">
-      <a className="text-xl font-bold no-underline text-gray-800 hover:text-gray-600">
+      <a className="text-xl font-bold no-underline text-white">
         <Image src="/logo.svg" alt="logo" width={48} height={48} />
       </a>
     </Link>
@@ -78,7 +81,7 @@ const Navbar = ({ menuOpen, setMenuOpen, navLinks }: any) => (
       type="button"
       aria-label="Toggle mobile menu"
       onClick={() => setMenuOpen(!menuOpen)}
-      className="rounded md:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50"
+      className="rounded md:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50 dark:text-lightestSlate"
     >
       <MenuAlt4Svg menuOpen={menuOpen} />
     </button>

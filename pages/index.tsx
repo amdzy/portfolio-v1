@@ -10,7 +10,7 @@ import ResponsiveNavBar from '../components/ResponsiveNavBar/ResponsiveNavBar';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="dark:bg-navy">
       <Head>
         <title>Soul Remix</title>
         <meta name="description" content="Personal Portfolio" />
