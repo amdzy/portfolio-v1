@@ -3,10 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { Link as ScrollLink } from 'react-scroll';
+import { useTheme } from 'next-themes';
+import Moon from '../svg/Moon';
+import Sun from '../svg/Sun';
 
 const ResponsiveNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(true);
+
+  const { theme, setTheme } = useTheme();
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -50,6 +55,14 @@ const ResponsiveNavBar = () => {
     >
       Contacts
     </ScrollLink>,
+    <button
+      aria-label="dark mode switch"
+      key="mode"
+      className="dark:text-lightSlate hover:text-main dark:hover:text-main"
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    >
+      {theme !== 'dark' ? <Moon /> : <Sun />}
+    </button>,
   ];
 
   const sticky = 'sticky top-0 shadow-md';
@@ -76,7 +89,7 @@ const Navbar = ({ menuOpen, setMenuOpen, navLinks }: any) => (
         <Image src="/logo.svg" alt="logo" width={48} height={48} />
       </a>
     </Link>
-    <nav className="hidden md:block space-x-10">{navLinks}</nav>
+    <nav className="hidden md:flex space-x-10 items-center">{navLinks}</nav>
     <button
       type="button"
       aria-label="Toggle mobile menu"
