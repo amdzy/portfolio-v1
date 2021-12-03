@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
@@ -22,54 +22,56 @@ const ResponsiveNavBar = () => {
   );
 
   const navLinkStyle =
-    'no-underline text-gray-800 dark:text-lightestSlate text-lg hover:text-main dark:hover:text-main cursor-pointer';
+    'no-underline text-gray-800 dark:text-lightestSlate text-lg hover:text-main dark:hover:text-mainDark cursor-pointer';
 
-  const navLinks = [
-    <ScrollLink
-      to="about"
-      key="1"
-      smooth={true}
-      duration={500}
-      className={navLinkStyle}
-      onClick={() => setMenuOpen(false)}
-    >
-      About
-    </ScrollLink>,
-    <ScrollLink
-      to="projects"
-      key="2"
-      smooth={true}
-      duration={500}
-      className={navLinkStyle}
-      onClick={() => setMenuOpen(false)}
-    >
-      Projects
-    </ScrollLink>,
-    <ScrollLink
-      to="contact"
-      key="3"
-      smooth={true}
-      duration={500}
-      className={navLinkStyle}
-      onClick={() => setMenuOpen(false)}
-    >
-      Contacts
-    </ScrollLink>,
-    <button
-      aria-label="dark mode switch"
-      key="mode"
-      className="dark:text-lightSlate hover:text-main dark:hover:text-main"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-    >
-      {theme !== 'dark' ? <Moon /> : <Sun />}
-    </button>,
-  ];
+  const navLinks = useMemo(
+    () => [
+      <ScrollLink
+        to="about"
+        key="1"
+        smooth={true}
+        duration={500}
+        className={navLinkStyle}
+        onClick={() => setMenuOpen(false)}
+      >
+        About
+      </ScrollLink>,
+      <ScrollLink
+        to="projects"
+        key="2"
+        smooth={true}
+        duration={500}
+        className={navLinkStyle}
+        onClick={() => setMenuOpen(false)}
+      >
+        Projects
+      </ScrollLink>,
+      <ScrollLink
+        to="contact"
+        key="3"
+        smooth={true}
+        duration={500}
+        className={navLinkStyle}
+        onClick={() => setMenuOpen(false)}
+      >
+        Contacts
+      </ScrollLink>,
+      <button
+        aria-label="dark mode switch"
+        key="mode"
+        className="dark:text-lightSlate hover:text-main dark:hover:text-mainDark"
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      >
+        {theme !== 'dark' ? <Moon /> : <Sun />}
+      </button>,
+    ],
+    [setTheme, theme]
+  );
 
-  const sticky = 'sticky top-0 shadow-md';
   return (
     <header
-      className={`p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 z-30 bg-white pb-0 pt-0 transition-all duration-300 dark:bg-lightNavy ${
-        (hideOnScroll || menuOpen) && sticky
+      className={`p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 z-30 bg-white pb-0 pt-0 transition-all duration-300 dark:bg-lightNavy shadow-md sticky ${
+        (hideOnScroll || menuOpen) && 'top-0'
       } `}
     >
       <Navbar

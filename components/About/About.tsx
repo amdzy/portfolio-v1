@@ -4,25 +4,6 @@ import Code from '../svg/Code';
 import Desktop from '../svg/Desktop';
 import Backend from '../svg/Backend';
 
-import html from '../../public/icons/html.svg';
-import css from '../../public/icons/css.svg';
-import js from '../../public/icons/js.svg';
-import ts from '../../public/icons/ts.svg';
-import python from '../../public/icons/python.svg';
-import react from '../../public/icons/react.svg';
-import redux from '../../public/icons/redux.svg';
-import next from '../../public/icons/next.svg';
-import material from '../../public/icons/material.svg';
-import tailwind from '../../public/icons/tailwind.svg';
-import sass from '../../public/icons/sass.svg';
-import figma from '../../public/icons/figma.svg';
-import ejs from '../../public/icons/ejs.svg';
-import node from '../../public/icons/node.svg';
-import express from '../../public/icons/express.svg';
-import nest from '../../public/icons/nest.svg';
-import mongo from '../../public/icons/mongo.svg';
-import postgre from '../../public/icons/postgre.svg';
-
 const About = () => {
   return (
     <>
@@ -31,7 +12,7 @@ const About = () => {
         id="about"
       >
         <h2 className="text-center text-3xl font-bold">
-          Hi, I’m ..... . Nice to meet you.
+          Hi, I’m A. Zabadany Nice to meet you.
         </h2>
         <p className="text-center max-w-3xl mt-6 mx-auto tracking-wider leading-relaxed text-lg">
           I am a software engineer who started his journey by studying computer
@@ -70,6 +51,25 @@ const About = () => {
 };
 
 export default About;
+
+import html from '../../public/icons/html.svg';
+import css from '../../public/icons/css.svg';
+import js from '../../public/icons/js.svg';
+import ts from '../../public/icons/ts.svg';
+import python from '../../public/icons/python.svg';
+import react from '../../public/icons/react.svg';
+import redux from '../../public/icons/redux.svg';
+import next from '../../public/icons/next.svg';
+import material from '../../public/icons/material.svg';
+import tailwind from '../../public/icons/tailwind.svg';
+import sass from '../../public/icons/sass.svg';
+import figma from '../../public/icons/figma.svg';
+import ejs from '../../public/icons/ejs.svg';
+import node from '../../public/icons/node.svg';
+import express from '../../public/icons/express.svg';
+import nest from '../../public/icons/nest.svg';
+import mongo from '../../public/icons/mongo.svg';
+import postgre from '../../public/icons/postgre.svg';
 
 const skills = [
   {

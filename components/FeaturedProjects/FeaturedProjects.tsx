@@ -26,9 +26,14 @@ const FeaturedProjects = () => {
                 Featured Project
               </p>
               <h2 className="text-white text-2xl font-bold mb-6 hover:text-main w-full md:text-black md:text-3xl dark:text-white dark:hover:text-mainDark">
-                <Link href="/" passHref>
-                  <a className="w-full block">{project.name}</a>
-                </Link>
+                <a
+                  href={project.liveLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="w-full block"
+                >
+                  {project.name}
+                </a>
               </h2>
               <p className="text-gray-100 mb-6 leading-relaxed md:bg-main md:p-4 md:rounded-md text-left ">
                 {project.desc}
@@ -49,6 +54,8 @@ const FeaturedProjects = () => {
               >
                 <a
                   href={project.githubLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="hover:text-main focus:text-main dark:hover:text-mainDark"
                   aria-label="Project github page"
                 >
@@ -56,6 +63,8 @@ const FeaturedProjects = () => {
                 </a>
                 <a
                   href={project.liveLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="hover:text-main focus:text-main dark:hover:text-mainDark"
                   aria-label="Project live page"
                 >

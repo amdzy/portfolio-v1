@@ -21,6 +21,8 @@ const OtherProjects = () => {
               <div className="flex space-x-3">
                 <a
                   href={project.githubLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="hover:text-main dark:text-lightSlate dark:hover:text-mainDark"
                   aria-label="Project github page"
                 >
@@ -28,6 +30,8 @@ const OtherProjects = () => {
                 </a>
                 <a
                   href={project.liveLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   aria-label="project live page"
                   className="hover:text-main dark:text-lightSlate dark:hover:text-mainDark"
                 >

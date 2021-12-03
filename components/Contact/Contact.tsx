@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <section
-      className="text-center mt-24 mb-40 dark:text-lightSlate"
+      className="text-center flex items-center flex-col justify-center  h-[85vh] dark:text-lightSlate"
       id="contact"
     >
       <p className="text-main text-2xl mb-3 dark:text-mainDark">
@@ -24,7 +24,7 @@ const Contact = () => {
         href="mailto:soulremix-dev@pm.me"
         rel="noopener noreferrer"
         target="_blank"
-        className="flex items-center text-lg max-w-max mx-auto p-4 pr-8 pl-8 border-2 border-main dark:border-mainDark rounded-full mt-20 mb-20 text-main dark:text-mainDark hover:text-white dark:hover:text-mainDark hover:bg-main dark:hover:bg-mainDark/10 transition-all duration-300"
+        className="flex items-center text-lg max-w-max mx-auto p-4 pr-8 pl-8 border-2 border-main dark:border-mainDark rounded-full mt-20 text-main dark:text-mainDark hover:text-white dark:hover:text-mainDark hover:bg-main dark:hover:bg-mainDark/10 transition-all duration-300"
       >
         Say Hello
       </a>

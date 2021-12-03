@@ -25,7 +25,7 @@ const otherProjects = [
     desc: 'A randomly generated maze, Your goal is to control the ball and reach the box at the bottom-right corner, built in JS using matter.js',
     tools: ['HTML5', 'CSS3', 'JS', 'matter.js'],
     githubLink: 'https://github.com/Soul-Remix/the-maze',
-    liveLink: 'https://soul-remix.github.io/maze/',
+    liveLink: 'https://soul-remix.github.io/the-maze/',
   },
   {
     name: 'Calculator',
