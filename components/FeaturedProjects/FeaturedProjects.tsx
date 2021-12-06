@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import External from '../svg/External';
-import Code from '../svg/Code';
-import featuredProjects from '../../data/featured-projects';
+import Link from "next/link";
+import Image from "next/image";
+import External from "../svg/External";
+import Code from "../svg/Code";
+import featuredProjects from "../../data/featured-projects";
 
 const FeaturedProjects = () => {
-  const evenDesc = 'col-start-1 col-span-full md:col-start-5 lg:col-start-6';
-  const evenImg = 'col-start-1 col-span-full md:col-end-8';
-  const oddDesc = 'col-start-1 col-span-full md:col-end-8 text-left';
-  const oddImg = 'col-start-1 col-span-full md:col-start-5 lg:col-start-6';
+  const evenDesc = "col-start-1 col-span-full md:col-start-5 lg:col-start-6";
+  const evenImg = "col-start-1 col-span-full md:col-end-8";
+  const oddDesc = "col-start-1 col-span-full md:col-end-8 text-left";
+  const oddImg = "col-start-1 col-span-full md:col-start-5 lg:col-start-6";
   return (
     <ul className="space-y-20 md:space-y-10 lg:space-y-20">
       {featuredProjects.map((project, i) => {
@@ -40,7 +40,7 @@ const FeaturedProjects = () => {
               </p>
               <div
                 className={`flex flex-wrap space-x-6 mb-6 text-gray-100 md:text-black md:w-9/12 dark:text-lightestSlate ${
-                  i % 2 == 0 ? 'md:justify-end md:ml-auto' : 'md:justify-start'
+                  i % 2 == 0 ? "md:justify-end md:ml-auto" : "md:justify-start"
                 }`}
               >
                 {project.tools.map((x, i) => (
@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
               </div>
               <div
                 className={`space-x-8 text-gray-100 md:text-black flex dark:text-lightestSlate ${
-                  i % 2 == 0 ? 'md:justify-end' : 'md:justify-start'
+                  i % 2 == 0 ? "md:justify-end" : "md:justify-start"
                 }`}
               >
                 <a
@@ -78,7 +78,11 @@ const FeaturedProjects = () => {
               }`}
             >
               <Link href={project.liveLink}>
-                <a aria-label="Project live page">
+                <a
+                  aria-label="Project live page"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <Image
                     src={project.image}
                     alt=""

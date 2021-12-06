@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useScrollPosition } from '@n8tb1t/use-scroll-position';
-import { Link as ScrollLink } from 'react-scroll';
-import { useTheme } from 'next-themes';
-import Moon from '../svg/Moon';
-import Sun from '../svg/Sun';
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import { Link as ScrollLink } from "react-scroll";
+import { useTheme } from "next-themes";
+import Moon from "../svg/Moon";
+import Sun from "../svg/Sun";
 
 const ResponsiveNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const ResponsiveNavBar = () => {
   );
 
   const navLinkStyle =
-    'no-underline text-gray-800 dark:text-lightestSlate text-lg hover:text-main dark:hover:text-mainDark cursor-pointer';
+    "no-underline text-gray-800 dark:text-lightestSlate text-lg hover:text-main dark:hover:text-mainDark cursor-pointer";
 
   const navLinks = useMemo(
     () => [
@@ -33,6 +33,7 @@ const ResponsiveNavBar = () => {
         duration={500}
         className={navLinkStyle}
         onClick={() => setMenuOpen(false)}
+        href="#about"
       >
         About
       </ScrollLink>,
@@ -43,6 +44,7 @@ const ResponsiveNavBar = () => {
         duration={500}
         className={navLinkStyle}
         onClick={() => setMenuOpen(false)}
+        href="#projects"
       >
         Projects
       </ScrollLink>,
@@ -53,6 +55,7 @@ const ResponsiveNavBar = () => {
         duration={500}
         className={navLinkStyle}
         onClick={() => setMenuOpen(false)}
+        href="#contact"
       >
         Contacts
       </ScrollLink>,
@@ -60,9 +63,9 @@ const ResponsiveNavBar = () => {
         aria-label="dark mode switch"
         key="mode"
         className="dark:text-lightSlate hover:text-main dark:hover:text-mainDark"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
-        {theme === 'dark' ? <Moon /> : <Sun />}
+        {theme === "dark" ? <Moon /> : <Sun />}
       </button>,
     ],
     [setTheme, theme]
@@ -71,7 +74,7 @@ const ResponsiveNavBar = () => {
   return (
     <header
       className={`p-4 md:pr-16 md:pl-16 lg:pr-20 lg:pl-20 z-30 bg-white pb-0 pt-0 transition-all duration-300 dark:bg-lightNavy shadow-md sticky ${
-        (hideOnScroll || menuOpen) && 'top-0'
+        (hideOnScroll || menuOpen) && "top-0"
       } `}
     >
       <Navbar
@@ -113,7 +116,7 @@ const MenuAlt4Svg = ({ menuOpen }: { menuOpen: boolean }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={`transition duration-100 ease h-8 w-8 dark:text-white ${
-      menuOpen ? 'transform rotate-90' : ''
+      menuOpen ? "transform rotate-90" : ""
     }`}
     viewBox="0 0 20 20"
     fill="currentColor"
