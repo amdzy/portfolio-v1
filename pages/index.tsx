@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import About from "../sections/About/About";
-import Contact from "../sections/Contact/Contact";
-import Footer from "../sections/Footer/Footer";
-import Hero from "../sections/Hero/Hero";
-import Projects from "../sections/Projects/Projects";
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
 import ResponsiveNavBar from "../components/ResponsiveNavBar/ResponsiveNavBar";
 
 const Home: NextPage = () => {

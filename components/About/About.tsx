@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Code from "../../components/svg/Code";
-import Desktop from "../../components/svg/Desktop";
-import Backend from "../../components/svg/Backend";
+import Code from "../svg/Code";
+import Desktop from "../svg/Desktop";
+import Backend from "../svg/Backend";
 
 const About = () => {
   return (
