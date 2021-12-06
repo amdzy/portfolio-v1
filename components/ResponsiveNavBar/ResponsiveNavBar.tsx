@@ -62,7 +62,7 @@ const ResponsiveNavBar = () => {
         className="dark:text-lightSlate hover:text-main dark:hover:text-mainDark"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
-        {theme !== 'dark' ? <Moon /> : <Sun />}
+        {theme === 'dark' ? <Moon /> : <Sun />}
       </button>,
     ],
     [setTheme, theme]
