@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -10,13 +10,13 @@ class MyDocument extends Document {
           <meta property="og:locale" content="en_US" />
           <meta
             property="og:description"
-            content="A. Zabadany (Soul-Remix) is a Software engineer, Full stack Web Developer"
+            content="A. Z (Soul-Remix) is a Software engineer, Full stack Web Developer"
           />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content="Soul Remix" />
           <meta
             name="twitter:description"
-            content="A. Zabadany (Soul-Remix) is a Software engineer, Full stack Web Developer"
+            content="A. Z (Soul-Remix) is a Software engineer, Full stack Web Developer"
           />
         </Head>
         <body>
