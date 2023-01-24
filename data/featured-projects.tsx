@@ -1,6 +1,5 @@
 import socialbookImg from "../public/socialbook.png";
 import fakestoreImg from "../public/fakestore.jpg";
-import blogImg from "../public/blog.png";
 import protonImg from "../public/proton.png";
 
 const featuredProjects = [
@@ -27,14 +26,6 @@ const featuredProjects = [
     githubLink: "https://github.com/Soul-Remix/react-shopping-cart",
     liveLink: "https://soul-remix.github.io/react-shopping-cart/",
     image: fakestoreImg,
-  },
-  {
-    name: "Movie Blog",
-    desc: "A Fullstack web application for a movie blogging site, Responsive Design ,Infinite Scrolling to load more posts, Comment section for every post and a separate site for CMS built form scratch",
-    tools: ["React", "React-query", "Express", "MongoDb"],
-    githubLink: "https://github.com/Soul-Remix/blog-frontend",
-    liveLink: "https://soul-remix.github.io/blog-frontend/",
-    image: blogImg,
   },
 ];
 
