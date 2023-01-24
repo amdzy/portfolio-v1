@@ -61,15 +61,17 @@ const FeaturedProjects = () => {
                 >
                   <Code />
                 </a>
-                <a
-                  href={project.liveLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="hover:text-main focus:text-main dark:hover:text-mainDark"
-                  aria-label="Project live page"
-                >
-                  <External />
-                </a>
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="hover:text-main focus:text-main dark:hover:text-mainDark"
+                    aria-label="Project live page"
+                  >
+                    <External />
+                  </a>
+                )}
               </div>
             </div>
             <div

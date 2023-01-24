@@ -1,9 +1,8 @@
-import Link from 'next/link';
-import otherProjects from '../../data/other-projects';
-import Code from '../svg/Code';
+import otherProjects from "../../data/other-projects";
+import Code from "../svg/Code";
 
-import External from '../svg/External';
-import Folder from '../svg/Folder';
+import External from "../svg/External";
+import Folder from "../svg/Folder";
 
 const OtherProjects = () => {
   return (
