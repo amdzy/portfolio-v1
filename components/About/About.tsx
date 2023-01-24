@@ -57,6 +57,8 @@ import html from "../../public/icons/html.svg";
 import css from "../../public/icons/css.svg";
 import js from "../../public/icons/js.svg";
 import ts from "../../public/icons/ts.svg";
+import cSharp from "../../public/icons/csharp.svg";
+import java from "../../public/icons/java.svg";
 import python from "../../public/icons/python.svg";
 import react from "../../public/icons/react.svg";
 import redux from "../../public/icons/redux.svg";
@@ -65,12 +67,14 @@ import material from "../../public/icons/material.svg";
 import tailwind from "../../public/icons/tailwind.svg";
 import sass from "../../public/icons/sass.svg";
 import figma from "../../public/icons/figma.svg";
-import ejs from "../../public/icons/ejs.svg";
 import node from "../../public/icons/node.svg";
 import express from "../../public/icons/express.svg";
 import nest from "../../public/icons/nest.svg";
 import mongo from "../../public/icons/mongo.svg";
 import postgre from "../../public/icons/postgre.svg";
+import dotnet from "../../public/icons/dotnet.svg";
+import azure from "../../public/icons/azure.svg";
+import firebase from "../../public/icons/firebase.svg";
 
 const skills = [
   {
@@ -81,6 +85,8 @@ const skills = [
       { lang: "CSS3", image: css },
       { lang: "JavaScript", image: js },
       { lang: "TypeScript", image: ts },
+      { lang: "CSharp", image: cSharp },
+      { lang: "Java", image: java },
       { lang: "Python", image: python },
     ],
   },
@@ -89,9 +95,9 @@ const skills = [
     title: "Front-end",
     items: [
       { lang: "React", image: react },
+      { lang: "React Native", image: react },
       { lang: "Redux", image: redux },
       { lang: "Next.js", image: next },
-      { lang: "ejs", image: ejs },
       { lang: "Sass", image: sass },
       { lang: "Tailwind", image: tailwind },
       { lang: "MaterialUI", image: material },
@@ -105,8 +111,11 @@ const skills = [
       { lang: "Node", image: node },
       { lang: "Express", image: express },
       { lang: "NestJS", image: nest },
-      { lang: "MongoDB", image: mongo },
+      { lang: ".Net", image: dotnet },
       { lang: "PostgreSQL", image: postgre },
+      { lang: "MongoDB", image: mongo },
+      { lang: "Azure", image: azure },
+      { lang: "Fire Base", image: firebase },
     ],
   },
 ];
