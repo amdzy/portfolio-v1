@@ -8,7 +8,7 @@ const featuredProjects = [
     desc: "An android and ios app for reddit built using React native, Written in TS",
     tools: ["React Native", "TypeScript"],
     githubLink: "https://github.com/Soul-Remix/proton-for-reddit",
-    liveLink: "",
+    liveLink: "https://github.com/Soul-Remix/proton-for-reddit",
     image: protonImg,
   },
   {

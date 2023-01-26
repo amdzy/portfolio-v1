@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div className="dark:bg-navy">
       <Head>
-        <title>Ahmad Zabadany | Software Engineer, Web Developer</title>
+        <title>A.Z | Software Engineer, Web Developer</title>
         <meta name="description" content="Personal Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
