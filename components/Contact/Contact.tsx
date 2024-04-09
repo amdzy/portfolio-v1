@@ -13,7 +13,7 @@ const Contact = () => {
       <p className="text-lg">
         I&apos;m currently open to work as a{" "}
         <span className="text-main dark:text-mainDark">
-          Front-end Developer.
+          Full Stack Developer.
         </span>{" "}
         full time or as a freelance.
       </p>
