@@ -7,6 +7,27 @@ const otherProjects = [
     liveLink: "https://github.com/Soul-Remix/WriteSharp",
   },
   {
+    name: "greenlight",
+    desc: "a JSON API designed for retrieving and managing information about movies.",
+    tools: ["Go", "httprouter", "postgresql"],
+    githubLink: "https://github.com/amdzy/greenlight",
+    liveLink: "https://github.com/amdzy/greenlight",
+  },
+  {
+    name: "snippet-box",
+    desc: "a web-application, which lets people paste and share snippets of text — a bit like Pastebin or GitHub’s Gists",
+    tools: ["Go", "httprouter"],
+    githubLink: "https://github.com/amdzy/snippet-box",
+    liveLink: "https://github.com/amdzy/snippet-box",
+  },
+  {
+    name: "Fake Store",
+    desc: "A front-end application for an e-commerce shop, features Clean user interface with smooth animations and Responsive design",
+    tools: ["React", "React-query", "TailwindCSS"],
+    githubLink: "https://github.com/Soul-Remix/react-shopping-cart",
+    liveLink: "https://soul-remix.github.io/react-shopping-cart/",
+  },
+  {
     name: "Movie Blog",
     desc: "A Fullstack web application for a movie blogging site, Responsive Design ,Infinite Scrolling to load more posts, Comment section for every post and a separate site for CMS built form scratch",
     tools: ["React", "React-query", "Express"],

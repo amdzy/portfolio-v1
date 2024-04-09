@@ -1,8 +1,25 @@
 import socialbookImg from "../public/socialbook.png";
-import fakestoreImg from "../public/fakestore.jpg";
 import protonImg from "../public/proton.png";
+import ipmsImg from "../public/ipms.png";
+import netWardenImg from "../public/netWarden.png";
 
 const featuredProjects = [
+  {
+    name: "NetWarden",
+    desc: "an open source Network management tool for device monitoring and control, similar to netcut.",
+    tools: ["C#", ".Net", "libpcap"],
+    githubLink: "https://github.com/Soul-Remix/NetWarden",
+    liveLink: "https://github.com/Soul-Remix/NetWarden",
+    image: netWardenImg,
+  },
+  {
+    name: "IPMS",
+    desc: "an open source pos management system for gyms, built with a modular architecture",
+    tools: ["TS", "NestJS", "PostgreSQL", "Prisma"],
+    githubLink: "https://github.com/Soul-Remix/inventory-pos-management-system",
+    liveLink: "https://github.com/Soul-Remix/inventory-pos-management-system",
+    image: ipmsImg,
+  },
   {
     name: "Proton-For-Reddit",
     desc: "An android and ios app for reddit built using React native, Written in TS",
@@ -18,14 +35,6 @@ const featuredProjects = [
     githubLink: "https://github.com/Soul-Remix/socialbook",
     liveLink: "https://social-book-app.netlify.app",
     image: socialbookImg,
-  },
-  {
-    name: "Fake Store",
-    desc: "A front-end application for an e-commerce shop, features Clean user interface with smooth animations and Responsive design, Ability to add and remove products from the shopping cart, Filter products by categories",
-    tools: ["React", "React-Router", "React-query", "TailwindCSS"],
-    githubLink: "https://github.com/Soul-Remix/react-shopping-cart",
-    liveLink: "https://soul-remix.github.io/react-shopping-cart/",
-    image: fakestoreImg,
   },
 ];
 
