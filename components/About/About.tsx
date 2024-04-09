@@ -13,13 +13,13 @@ const About = () => {
         id="about"
       >
         <h2 className="text-center text-3xl font-bold">
-          Hi, I’m A.Z Nice to meet you.
+          Hi, I’m Zabadany (amdzy) Nice to meet you.
         </h2>
         <p className="text-center max-w-3xl mt-6 mx-auto tracking-wider leading-relaxed text-lg">
           I am a Full Stack developer with industry experience building websites
           and web applications. I specialize in TypeScript and have professional
-          experience working with C# and React. I also have experience working
-          with React Native, and Java. Take a look at my work or get in touch!
+          experience working with Go and C#. I also have experience working with
+          Python. Take a look at my work or get in touch!
         </p>
       </section>
       <section className="-mt-36 mb-20 bg-white w-11/12 lg:w-10/12 mx-auto z-10 rounded-xl grid grid-cols-1 md:grid-cols-3 shadow-md overflow-hidden dark:bg-lightNavy dark:text-lightestSlate">

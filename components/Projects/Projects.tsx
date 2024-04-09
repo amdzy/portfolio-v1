@@ -20,7 +20,7 @@ const Projects = () => {
         </h2>
         <OtherProjects />
         <a
-          href="https://github.com/Soul-Remix"
+          href="https://github.com/amdzy"
           target="_blank"
           rel="noreferrer"
           className="flex items-center text-lg max-w-max mx-auto p-4 border-2 border-main dark:border-mainDark rounded-full mt-20 mb-20 text-main dark:text-mainDark hover:text-white dark:hover:text-mainDark hover:bg-main dark:hover:bg-mainDark/10 transition-all duration-300"

@@ -2,11 +2,13 @@
 
 This is my personal portfolio website, built using NextJS and TailwindCSS
 
-[Live Page](https://soul-remix.netlify.app/)
+[Live Page](https://amdzy.netlify.app/)
 
 ## Frameworks
-* [NextJS](https://nextjs.org/)
-* [TailwindCSS](https://tailwindcss.com/)
+
+- [NextJS](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
