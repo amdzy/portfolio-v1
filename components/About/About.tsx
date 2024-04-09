@@ -1,8 +1,5 @@
 import Image from "next/image";
 
-import Code from "../svg/Code";
-import Desktop from "../svg/Desktop";
-import Backend from "../svg/Backend";
 import { skills } from "../../data/skills";
 
 const About = () => {
