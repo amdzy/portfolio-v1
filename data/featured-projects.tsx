@@ -12,14 +12,14 @@ const featuredProjects = [
     liveLink: "https://github.com/amdzy/NetWarden",
     image: netWardenImg,
   },
-  {
-    name: "IPMS",
-    desc: "an open source pos management system for gyms, built with a modular architecture",
-    tools: ["TS", "NestJS", "PostgreSQL", "Prisma"],
-    githubLink: "https://github.com/amdzy/inventory-pos-management-system",
-    liveLink: "https://github.com/amdzy/inventory-pos-management-system",
-    image: ipmsImg,
-  },
+  // {
+  //   name: "IPMS",
+  //   desc: "an open source pos management system for gyms, built with a modular architecture",
+  //   tools: ["TS", "NestJS", "PostgreSQL", "Prisma"],
+  //   githubLink: "https://github.com/amdzy/inventory-pos-management-system",
+  //   liveLink: "https://github.com/amdzy/inventory-pos-management-system",
+  //   image: ipmsImg,
+  // },
   {
     name: "Proton-For-Reddit",
     desc: "An android and ios app for reddit built using React native, Written in TS",
