@@ -31,7 +31,7 @@ const featuredProjects = [
   {
     name: "Socialbook",
     desc: "A Full stack social media web application written in TS, built in React for Front-end and nestJS for Back-end and postgresql as the DB",
-    tools: ["React", "MaterialUI", "NestJS", "PostgreSQL", "Heroku"],
+    tools: ["React", "MUI", "NestJS", "PostgreSQL"],
     githubLink: "https://github.com/amdzy/socialbook",
     liveLink: "https://social-book-app.netlify.app",
     image: socialbookImg,

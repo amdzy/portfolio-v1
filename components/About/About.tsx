@@ -13,7 +13,7 @@ const About = () => {
         id="about"
       >
         <h2 className="text-center text-3xl font-bold">
-          Hi, I’m Zabadany (amdzy) Nice to meet you.
+          Hi, I’m A. Zabadany Nice to meet you.
         </h2>
         <p className="text-center max-w-3xl mt-6 mx-auto tracking-wider leading-relaxed text-lg">
           I am a Full Stack developer with industry experience building websites
